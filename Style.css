@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #674baf;
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 4rem 5rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left_side {
+  padding-top: 8.7rem;
+}
+
+.left_side .desktop {
+  display: none;
+}
+
+.right_side {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.right_side h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #f9f7f7;
+  letter-spacing: 0.1rem;
+}
+
+.right_side p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 3rem;
+  font-size: 1.97rem;
+  color: #dcdada;
+  font-weight: 400;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.right_side .button {
+  font-family: 'Poppins', sans-serif;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  display: inline-block;
+  padding: 1.5rem 9.5rem;
+  background-color: #f9f7f7;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  color: #674baf;
+  margin-bottom: 7.75rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 25px -5px, rgba(0, 0, 0, 0.15) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 25px -5px, rgba(0, 0, 0, 0.15) 0px 10px 10px -5px;
+}
+
+.right_side .button:hover {
+  background-color: #e882e8;
+  color: #f9f7f7;
+  cursor: pointer;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .social_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 12.75rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .social_media .social_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  border: 2px solid #f9f7f7;
+  border-radius: 50%;
+}
+
+footer .social_media .social_icon:hover {
+  border: 2px solid #e882e8;
+  cursor: pointer;
+}
+
+footer .social_media .social_icon:hover svg path {
+  fill: #e882e8;
+}
+
+footer .social_media .social_icon svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+    padding: 3.5rem 4.5rem 2.5rem 4.375rem;
+  }
+  header img {
+    height: 3rem;
+    width: auto;
+  }
+  main {
+    padding-top: 6.5rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .left_side {
+    padding-top: 0rem;
+  }
+  .left_side .mobile {
+    display: none;
+  }
+  .left_side .desktop {
+    display: inline-block;
+  }
+  .right_side {
+    padding-top: 0rem;
+    text-align: left;
+    padding-top: 3rem;
+    padding-left: 3.75rem;
+  }
+  .right_side h1 {
+    font-size: 2.3rem;
+  }
+  .right_side p {
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+    padding: 1.5rem 0rem;
+  }
+  .right_side .button {
+    padding: 1rem 4rem;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+  }
+  footer {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  footer .social_media {
+    min-width: 9.5rem;
+  }
+  footer .social_media .social_icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  footer .social_media .social_icon svg {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+}
+/*# sourceMappingURL=Style.css.map */
